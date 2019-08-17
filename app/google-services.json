@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "204853314441",
+    "firebase_url": "https://donielapp-e2cc8.firebaseio.com",
+    "project_id": "donielapp-e2cc8",
+    "storage_bucket": "donielapp-e2cc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204853314441:android:270f8b690d56a707",
+        "android_client_info": {
+          "package_name": "com.conebase.donielapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204853314441-12o1li2nj3n8dnl3ps84bij6m88fd0cn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.conebase.donielapp",
+            "certificate_hash": "759f62d043efd895e01eb0ffb1b3047e72366b6f"
+          }
+        },
+        {
+          "client_id": "204853314441-62uq91i8q0tp1fle3865citq2krrdrnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaEbNjX81cK0UOIa5F_1S9PfMhAgReX50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204853314441-62uq91i8q0tp1fle3865citq2krrdrnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
