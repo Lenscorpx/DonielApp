@@ -14,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -64,7 +65,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 regBtn.setVisibility(View.INVISIBLE);
-                progressBarr.setVisibility(View.INVISIBLE);
+                progressBarr.setVisibility(View.VISIBLE);
                 final String email = user_mail.getText().toString();
                 final String passwd = user_pwd.getText().toString();
                 final String telephone = user_phone.getText().toString();
@@ -111,6 +112,7 @@ public class RegisterActivity extends AppCompatActivity {
                         else
                         {
                             showMessage("Echec de creation de compte!"+ task.getException().getMessage());
+                            Log.d("Erreur ",task.getException().getMessage());
                             regBtn.setVisibility(View.VISIBLE);
                             progressBarr.setVisibility(View.INVISIBLE);
                         }
@@ -151,6 +153,10 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void udpateUI() {
+
+        Intent homeActivity = new Intent (getApplicationContext(), HomeActivity.class);
+        startActivity(homeActivity);
+        finish();
     }
 
     private void showMessage(String s) {
