@@ -14,6 +14,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -25,6 +26,7 @@ public class RegisterActivity extends AppCompatActivity {
     static int PreqCode = 1;
     static int REQUESCODE = 1;
     Uri pickedImgUri;
+    private EditText user_mail, user_pwd, user_cnf_pwd, user_name, user_phone
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
