@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/reg_noms"
+    android:id="@+id/reg_constraint_lay"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activities.RegisterActivity"
@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imgv_user"
-        android:layout_width="130dp"
-        android:layout_height="88dp"
+        android:layout_width="182dp"
+        android:layout_height="187dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="204dp" />
+        app:layout_constraintGuide_begin="732dp" />
 
     <EditText
         android:background="@drawable/reg_edit_style"
@@ -53,21 +53,21 @@
         app:layout_constraintTop_toBottomOf="@+id/imgv_user" />
 
     <EditText
-        android:background="@drawable/reg_edit_style"
-        android:hint="Numero de téléphone"
-        android:textColor="@color/colorPrimary"
-        android:textColorHint="@color/colorPrimary"
         android:id="@+id/reg_numero"
         android:layout_width="285dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edit_style"
         android:ems="10"
+        android:hint="Numero de téléphone"
         android:inputType="phone"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/reg_mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -134,22 +134,20 @@
 
     <Button
         android:id="@+id/reg_btn_send"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:layout_width="252dp"
+        android:layout_height="54dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="211dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@drawable/reg_btn_stylex"
         android:text="Enregistrer"
         android:textAllCaps="false"
         android:textColor="@color/color_edittxt"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_confirm_pwd" />
 
