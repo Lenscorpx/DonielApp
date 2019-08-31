@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/reg_constraint_lay"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Activities.RegisterActivity"
-    android:background="#ffffffff">
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    tools:context=".Activities.RegisterActivity">
 
     <ImageView
         android:id="@+id/imgv_user"
@@ -33,10 +33,6 @@
         app:layout_constraintGuide_begin="732dp" />
 
     <EditText
-        android:background="@drawable/reg_edit_style"
-        android:hint="Noms complets"
-        android:textColor="@color/colorPrimary"
-        android:textColorHint="@color/colorPrimary"
         android:id="@+id/reg_nom"
         android:layout_width="285dp"
         android:layout_height="48dp"
@@ -45,8 +41,12 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edit_style"
         android:ems="10"
+        android:hint="Noms complets"
         android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/reg_numero"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,10 +74,6 @@
         app:layout_constraintTop_toBottomOf="@+id/reg_nom" />
 
     <EditText
-        android:background="@drawable/reg_edit_style"
-        android:hint="Adresse mail"
-        android:textColor="@color/colorPrimary"
-        android:textColorHint="@color/colorPrimary"
         android:id="@+id/reg_mail"
         android:layout_width="285dp"
         android:layout_height="48dp"
@@ -87,18 +83,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@drawable/reg_edit_style"
         android:ems="10"
+        android:hint="Adresse mail"
         android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/reg_pwd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_numero" />
 
     <EditText
-        android:background="@drawable/reg_edit_style"
-        android:hint="Entrez votre mot de passe"
-        android:textColor="@color/colorPrimary"
-        android:textColorHint="@color/colorPrimary"
         android:id="@+id/reg_pwd"
         android:layout_width="285dp"
         android:layout_height="48dp"
@@ -107,17 +103,17 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@drawable/reg_edit_style"
         android:ems="10"
+        android:hint="Entrez votre mot de passe"
         android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_mail" />
 
     <EditText
-        android:background="@drawable/reg_edit_style"
-        android:textColor="@color/colorPrimary"
-        android:textColorHint="@color/colorPrimary"
-        android:hint="Confirmez votre mot de passe"
         android:id="@+id/reg_confirm_pwd"
         android:layout_width="285dp"
         android:layout_height="48dp"
@@ -126,8 +122,12 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@drawable/reg_edit_style"
         android:ems="10"
+        android:hint="Confirmez votre mot de passe"
         android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/reg_pwd" />
