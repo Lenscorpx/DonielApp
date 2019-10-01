@@ -4,74 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/reg_constraint_lay"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="#ffffffff"
     tools:context=".Activities.RegisterActivity">
 
     <ImageView
         android:id="@+id/imgv_user"
-        android:layout_width="182dp"
-        android:layout_height="187dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/app_user_pic"
         app:layout_constraintBottom_toTopOf="@+id/reg_nom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.Guideline
+    <android.support.constraint.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="732dp" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <EditText
         android:id="@+id/reg_nom"
-        android:layout_width="285dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:inputType="textPersonName"
         android:background="@drawable/reg_edit_style"
         android:ems="10"
         android:hint="Noms complets"
-        android:inputType="textPersonName"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/reg_numero"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgv_user" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/reg_numero"
-        android:layout_width="285dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
         android:background="@drawable/reg_edit_style"
         android:ems="10"
-        android:hint="Numero de téléphone"
-        android:inputType="phone"
         android:textColor="@color/colorPrimary"
         android:textColorHint="@color/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/reg_mail"
+        android:hint="Numero de téléphone"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_nom" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/reg_mail"
